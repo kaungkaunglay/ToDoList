@@ -3,9 +3,12 @@ const express = require("express");
 const bodyparser = require("body-parser");
 
 const app = express() ; 
+const path = require('path');
 var items = ["Buy Food", "Cood food", "Eat Food"]; 
 app.set("view engine","ejs"); 
+app.use(express.static(path.join(__dirname,'public')));
 app.use(bodyparser.urlencoded({extended: true})) ;
+
 app.get("/", function(req, res){
     var today = new Date(); 
     var options = {
