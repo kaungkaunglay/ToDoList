@@ -14,8 +14,8 @@
     <div class="box">
             <% for(var i =0 ; i<new_list_item.length; i++){ %>
                 <div class="item">
-                <input type="checkbox"> 
-                <p><%= new_list_item[i] %></p>
+                <input id="check<%= i %>" type="checkbox"> 
+                <p for="check<%= i %>"><%= new_list_item[i] %></p>
                 </div>
             <% } %>
             <form class="item" action="/" method="post">

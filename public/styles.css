@@ -40,7 +40,9 @@ input:checked+p {
 }
 
 input[type="checkbox"] {
-  margin: 20px;
+  margin: 30px;
+  width: 100px;
+  height: 100px;
 }
 
 p {
